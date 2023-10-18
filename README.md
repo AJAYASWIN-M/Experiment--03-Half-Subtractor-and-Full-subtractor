@@ -63,7 +63,7 @@ module expfour(a,b,c,difference,borrow);
 input a,b,c;
 output difference,borrow;
 assign difference=(a^b^c);
-assign borrow=(~a&(b^c)|(b&c));
+assign borrow = ((~a)&b)|(b&bin)|((~a)&bin);
 endmodule
 ```
 
@@ -88,7 +88,8 @@ endmodule
 ![211188678-c0f3a8cb-5f19-4215-812f-0ed8837f18be](https://github.com/AJAYASWIN-M/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/118679692/9003618f-21b1-441c-83aa-a1f9975aec53)
 
 ##  RTL realization
-![211188667-d29dc5ca-f547-4c71-8bc7-2a8af503ba20](https://github.com/AJAYASWIN-M/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/118679692/a6235f9d-8192-4293-9f84-94629724aca3)
+
+![266774740-336fd7c4-58f2-47cc-9337-6fa17545c3bf](https://github.com/AJAYASWIN-M/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/118679692/854b10ed-7de9-4909-97c7-a60cf9507edf)
 
 ## Timing diagram
 ![211188674-e71cd071-5389-4f65-a8d8-0eececbd1ce7](https://github.com/AJAYASWIN-M/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/118679692/939d7f2a-6c59-4b0f-b9c3-b106f4141d7f)
